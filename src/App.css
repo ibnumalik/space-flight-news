@@ -1,38 +1,37 @@
 .App {
-  text-align: center;
+  width: 800px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.SpaceNews-Container {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.SpaceNews-Container p {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.SpaceNews-List {
+  margin-bottom: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.SpaceNews-List .header {
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SpaceNews-List .title,
+.SpaceNews-List .summary {
+  color: #444444;
+}
+
+.SpaceNews-List .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.SpaceNews-List .published {
+  font-size: 0.875rem;
+  color: #777777;
 }
